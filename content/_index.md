@@ -1,9 +1,11 @@
 ---
 hero:
   heading: MK WEB
-  maxWidthPX: "652"
+  maxWidthPX: '652'
 seo:
   image: "/images/hero-2.jpg"
+heading: MK WEB
+maxWidthPX: 20
 
 ---
 Hello World
