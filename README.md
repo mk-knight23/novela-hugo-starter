@@ -1,6 +1,10 @@
 # Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+https://pensive-leavitt-25365d.netlify.app
+
+https://novela-hugo-starter.vercel.app
+
+
 
 ## Available Scripts
 
