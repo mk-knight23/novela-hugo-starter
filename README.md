@@ -1,115 +1,70 @@
-[![Netlify Status](https://api.netlify.com/api/v1/badges/8fd7da5f-0c4d-4a43-9e23-2d1baf0d35cc/deploy-status)](https://app.netlify.com/sites/hugo-novela-forestry/deploys)
+# Getting Started with Create React App
 
-# Hugo Novela Forestry Starter
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-A port of [Narative](https://www.narative.co/)'s Gatsby theme [Novela](https://www.narative.co/labs/novela/)
+## Available Scripts
 
-![](images/tn.png)
+In the project directory, you can run:
 
-<a href="https://app.forestry.io/quick-start?repo=forestryio/novela-hugo-starter&engine=hugo&version=0.77.0">
-    <img alt="Import this project into Forestry" src="https://assets.forestry.io/import-to-forestryK.svg" />
-</a>
+### `yarn start`
 
-## Prerequisites
+Runs the app in the development mode.\
+Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-- Hugo > 0.55.0 (tested with latest version)
+The page will reload if you make edits.\
+You will also see any lint errors in the console.
 
-## Content Management
+### `yarn test`
 
-![Forestry user interface](images/novela-forestry.png)
+Launches the test runner in the interactive watch mode.\
+See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-This project has been pre-configured to work with [Forestry](https://forestry.io), just import your repository ✨.
+### `yarn build`
 
-Any changes you make will be commited back to the repo, and deployed if you're using Netlify.
+Builds the app for production to the `build` folder.\
+It correctly bundles React in production mode and optimizes the build for the best performance.
 
-## Deployment and hosting with Netlify
+The build is minified and the filenames include the hashes.\
+Your app is ready to be deployed!
 
-Import your site in [Netlify](https://netlify.com)
+See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-1. Create a new site in Netlify and import your repository.
-2. Set the build command to: `hugo --gc --minify`
-3. Set the publish directory to: `public`
-4. Make sure to set `HUGO_VERSION` to 0.55.0 or above (tested with latest version)
+### `yarn eject`
 
-That's it, now your site gets deployed automatically on `git push` or when saving documents from Forestry.
+**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
 
-## Development
+If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-```bash
-# clone your repository
-# cd in your project directory
-# Start local server
-hugo server
-```
+Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
 
-For more information, see [official Hugo documentation](https://gohugo.io/getting-started/).
+You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
 
-## Customization
+## Learn More
 
-### Logo
+You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-Add to your projects layout directory your logo's SVG:
-`/layouts/icons/ui/logo.html`
+To learn React, check out the [React documentation](https://reactjs.org/).
 
-### Socials
+### Code Splitting
 
-In order for the Socials to be surfaced in Forestry, you should copy the theme's `config/_default/social.yaml` to your project.
+This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
 
-### Authors
+### Analyzing the Bundle Size
 
-You should register authors as a taxonomy in your project's `config.yaml``
+This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
 
-```yaml
-taxonomies:
-  author: authors
-```
+### Making a Progressive Web App
 
-#### Creating authors
+This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
 
-Add a similar file to your content directory and Front Matter example.
+### Advanced Configuration
 
-```yaml
-# /content/authors/firstname-lastname/_index.md
----
-title: Dennis Brotzky
-bio: |
-  Written by You. This is where your author bio lives. Share your work, your
-  joys and of course, your Twitter handle.
-avatar: /images/dennis-brotzky.jpg
-featured: true
-social:
-  - title: github
-    url: https://github.com
-  - title: twitter
-    url: https://twitter.com
-  - title: instagram
-    url: https://instagram.com
-  - title: dribbble
-    url: https://dribbble.com
-  - title: unsplash
-    url: https://unsplash.com
----
-```
+This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
 
-#### Assigning authors to posts.
+### Deployment
 
-Add the name of the author to the "authors" field:
+This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
 
-```yaml
-authors:
-  - Dennis Brotzky
-  - Thiago Costa
-```
-### Newsletter call to action
+### `yarn build` fails to minify
 
-This theme includes a shortcode for a newsletter callout form that you can add to any page.
-It uses [formspree.io](//formspree.io/) as proxy to send the actual email. Each month, visitors can send you up to one thousand emails without incurring extra charges. Visit the Formspree site to get get going add your Formspree email to your shortcode like this:
-
-```
-{{< subscribe email="your@email.com" >}}
-```
-
-
-## LICENSE
-
-MIT
+This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
