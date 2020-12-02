@@ -4,3 +4,4 @@
 
 # DEMO :  https://novela-hugo-starter.vercel.app
 
+![Screenshot](news-ss.png)
